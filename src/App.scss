@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "Silk Serif";
+  src: url(../src/assets/fonts/silk/FontsFree-Net-Silk-Serif2.ttf);
+}
 
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body{
-  background: #000;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 .circle{
@@ -23,6 +30,116 @@ html, body{
   border-radius: 50%;
   z-index: 999;
   pointer-events: none;
+}
+
+.background{
+  position: fixed;
+  z-index: -9;
+  width: 100%;
+  height: 100%;
+  background: #000;
+
+  .overlay{
+    position: fixed;
+    z-index: -8;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    background-image: url(../src/assets/img/transparent-plastic-texture-PNG.png);
+  }
+}
+
+.hero{
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    height: 200px;
+
+    img{
+      width: 150px;
+    }
+
+    .links{
+      display: flex;
+      align-items: center;
+
+      a{
+        color: #fff;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-family: "Silk Serif";
+      }
+      img{
+        width: 130px;
+        height: auto;
+      }
+    }
+  }
+  // nav
+
+  h1{
+
+  }
+}
+
+.hero > h1{
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 100px;
+  width: 80%;
+  font-size: 90px;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Silk Serif";
+}
+
+.down{
+  width: 100%;
+
+  .img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img{
+      width: 500px;
+    }
+  }
+
+  .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+
+    h3{
+      color: #fff;
+      font-weight: 100;
+      text-align: center;
+      line-height: 50px;
+      width: 50%;
+      font-size: 35px;
+      margin-bottom: 70px;
+      font-family: "Silk Serif";
+    }
+
+    img{
+      opacity: 1;
+    }
+  }
 }
 
 main{
@@ -136,7 +253,7 @@ svg{
 }
 
 .runAnimate{
-  opacity: 1;
+  // opacity: 1;
   transition: opacity 5s;
   animation: animate 10s cubic-bezier(0.19, 1, 0.22, 1) both;
 }

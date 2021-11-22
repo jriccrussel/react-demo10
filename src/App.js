@@ -2,16 +2,16 @@ import './App.scss'
 import Content from './component/Content'
 import Cursor from './component/Cursor'
 import imgTitle from './assets/svg/title.svg'
+import TopContent from './component/TopContent'
 
 function App() {
   return (
     <>
       <Cursor />
+      <TopContent />
       <Content />
       {/* <img src={imgTitle} alt="" /> */}
-
-
-      <svg xmlnsDc='http://purl.org/dc/elements/1.1/' xmlnsCc='http://creativecommons.org/ns#' xmlnsRdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlnsSvg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 519.9 200' width='100%' stroke-width='2' fill='none' stroke='#c32148' stroke-linecap='round' >
+      {/* <svg xmlnsDc='http://purl.org/dc/elements/1.1/' xmlnsCc='http://creativecommons.org/ns#' xmlnsRdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlnsSvg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 519.9 200' width='100%' stroke-width='2' fill='none' stroke='#c32148' stroke-linecap='round' >
         <path vector-effect='non-scaling-stroke' transform='translate(0,100)' d='M12.53 -23.4C12.53 -23.4 46.03 -23.4 46.03 -23.4M2.9 0.0C2.9 -0.38 29.3 -64.2 29.3 -64.2C29.3 -64.2 55.7 0.0 55.7 0.0' />
         <path vector-effect='non-scaling-stroke' transform='translate(55.7,100)' d='M10.0 -34.5C11.27 -39.77 13.77 -43.83 17.5 -46.7C21.3 -49.57 25.73 -51.0 30.8 -51.0C35.4 -51.0 39.37 -49.97 42.7 -47.9C46.1 -45.83 48.73 -42.87 50.6 -39.0C52.47 -35.13 53.4 -30.47 53.4 -25.0C53.4 -19.6 52.47 -14.93 50.6 -11.0C48.73 -7.13 46.1 -4.17 42.7 -2.1C39.37 -0.03 35.4 1.0 30.8 1.0C27.4 1.0 24.27 0.37 21.4 -0.9C18.53 -2.23 16.1 -4.13 14.1 -6.6C12.17 -9.13 10.8 -12.17 10.0 -15.7M10.1 -73.0C10.1 -73.0 10.1 0.0 10.1 0.0' />
         <path vector-effect='non-scaling-stroke' transform='translate(109.1,100)' d='M24.33 1.84C24.33 1.84 2.2 -50.0 2.2 -50.0M45.9 -50.0C45.9 -50.0 21.0 10.1 21.0 10.1C19.8 12.97 18.53 15.23 17.2 16.9C15.93 18.57 14.5 19.73 12.9 20.4C11.3 21.13 9.47 21.5 7.4 21.5C5.67 21.5 4.1 21.23 2.7 20.7C1.37 20.17 0.33 19.37 -0.4 18.3' />
@@ -23,7 +23,7 @@ function App() {
         <path vector-effect='non-scaling-stroke' transform='translate(390.7,100)' d='M47.0 0.0C47.0 0.0 22.8 -29.1 22.8 -29.1M44.1 -50.0C44.1 -50.0 9.3 -15.5 9.3 -15.5M9.3 -73.0C9.3 -73.0 9.3 0.0 9.3 0.0' />
         <path vector-effect='non-scaling-stroke' transform='translate(437.7,100)' d='M5.21 -25.5C5.21 -25.5 48.6 -25.5 48.6 -25.5C48.6 -25.5 48.6 -25.9 48.6 -25.9C48.6 -25.9 48.6 -26.2 48.6 -26.2C48.6 -31.33 47.73 -35.73 46.0 -39.4C44.33 -43.13 41.93 -46.0 38.8 -48.0C35.67 -50.0 31.9 -51.0 27.5 -51.0C27.5 -51.0 27.5 -51.0 27.5 -51.0C23.3 -51.0 19.5 -49.97 16.1 -47.9C12.77 -45.83 10.1 -42.87 8.1 -39.0C6.1 -35.13 5.1 -30.47 5.1 -25.0C5.1 -19.6 6.1 -14.93 8.1 -11.0C10.17 -7.13 12.93 -4.17 16.4 -2.1C19.93 -0.03 23.9 1.0 28.3 1.0C31.23 1.0 34.0 0.53 36.6 -0.4C39.2 -1.4 41.5 -2.77 43.5 -4.5C45.5 -6.3 47.07 -8.43 48.2 -10.9' />
         <path vector-effect='non-scaling-stroke' transform='translate(486.3,100)' d='M10.1 -50.0C10.1 -33.33 10.1 -16.67 10.1 0.0M10.1 -37.0C11.72 -42.62 15.59 -47.95 21.18 -50.1C24.89 -51.33 29.35 -51.56 32.75 -49.35C33.06 -49.13 33.34 -48.88 33.6 -48.6' />
-      </svg>
+      </svg> */}
     </>
   )
 }
