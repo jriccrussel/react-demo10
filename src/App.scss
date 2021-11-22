@@ -1,13 +1,17 @@
-html, body{
-  background: #000;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 *{
   margin: 0;
   padding: 0;
+}
+
+html, body{
+  background: #000;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .circle{
@@ -17,4 +21,128 @@ html, body{
   transform: translate(-50%, -50%);
   border: 1.2px solid #fff;
   border-radius: 50%;
+  z-index: 999;
+  pointer-events: none;
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .wrapper{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: cover;
+    background-position: 60%;
+    background-image: url(https://images.unsplash.com/photo-1627482476786-9e8ad319946b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+
+    h1{ 
+      font-size: 700px;
+      font-weight: 900;
+      color: #fff;
+      font-family: "Montserrat";
+    }
+  }
+
+  .whtBg{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 53%;
+    height: 140px;
+    background: #fff;
+
+    .blk{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      width: 230px;
+      height: 330px;
+      background: #000;
+
+      p{
+        color: #fff;
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        line-height: 26px;
+        padding: 0 22px;
+      }
+    }
+    // blk
+
+    .lineWrap{
+      display: flex;
+      align-items: center;
+      h4{
+        font-size: 13px;
+        // font-family: 'Playfair Display', serif;
+        font-family: "Montserrat";
+      }
+  
+      .line{
+        width: 200px;
+        height: 2px;
+        margin: 0 30px;
+        background: #000;
+      }
+  
+      i{
+        cursor: pointer;
+      }
+    }
+    // lineWrap
+  } // whtBg
+
+  h5{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    font-family: "Montserrat";
+    transform: rotate(-90deg);
+  } // h5
+}
+
+svg{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  stroke-dashoffset: 1000px;
+  stroke-dasharray: 400px;
+  opacity: 0;
+}
+
+.runAnimate{
+  opacity: 1;
+  transition: opacity 5s;
+  animation: animate 10s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+@keyframes animate {
+  to{
+    stroke-dasharray: 0px;
+  }
 }
